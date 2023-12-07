@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="1046.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="profit.sysanal.HelloController">
+   <Pane prefHeight="598.0" prefWidth="1046.0">
+      <Button fx:id="calculate" layoutX="14.0" layoutY="153.0" mnemonicParsing="false" onAction="#showResults" prefHeight="63.0" prefWidth="225.0" text="Обрахувати">
+         <font>
+            <Font name="Times New Roman" size="18.0" />
+         </font>
+      </Button>
+      <Text layoutX="14.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кількість накопичувачів" wrappingWidth="185.0">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="14.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Кількість верстатів" wrappingWidth="185.0">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nakopuchyvachi" layoutX="14.0" layoutY="41.0" prefHeight="25.0" prefWidth="225.0" />
+      <TextField fx:id="verstatu" layoutX="14.0" layoutY="100.0" prefHeight="25.0" prefWidth="225.0" />
+      <TextArea fx:id="maxProfit" layoutX="14.0" layoutY="232.0" prefHeight="63.0" prefWidth="225.0" />
+      <TextArea fx:id="minProfit" layoutX="14.0" layoutY="307.0" prefHeight="63.0" prefWidth="225.0" />
+      <TableView fx:id="result" layoutX="249.0" layoutY="8.0" prefHeight="576.0" prefWidth="788.0" />
+   </Pane>
+</VBox>
